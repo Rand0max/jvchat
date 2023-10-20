@@ -26,6 +26,9 @@ via le data-attribut "jvchat-id".
 Il existe aussi l'évènement "jvchat:activation" qui est émis une seule fois : à l'initialisation
 lorsque le topic pass en mode "JVChat" après appui sur le bouton.
 
+Il existe aussi l'évènement "jvchat:postmessage". Celui-ci est émis chaque fois qu'un message est posté par l'utilisateur actuel.
+Il contient l'identifiant du message, le contenu du message, et l'auteur du message.
+
 Exemple pour cacher les messages qui contiennent certains mot-clefs:
 
     // my_plugin.user.js
